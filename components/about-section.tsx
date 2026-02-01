@@ -34,7 +34,10 @@ export default function AboutSection() {
       transition={{ duration: 0.5 }}
     >
       <div className="flex flex-col md:flex-row justify-between items-center gap-2">
-        <h1 className="text-xl font-semibold text-slate-200">Hi, I'm Utkarsh 👋</h1>
+        <h1 className="text-xl font-semibold text-slate-200">
+          Hi, I'm Utkarsh 👋
+        </h1>
+
         <div className="flex items-center gap-4">
           <div className="flex flex-col md:flex-row items-center gap-2">
             <div className="flex gap-4">
@@ -54,6 +57,7 @@ export default function AboutSection() {
                 </a>
               ))}
             </div>
+
             <a
               href="mailto:utkarshdhande1432@gmail.com"
               className="text-sm text-slate-300 hover:text-white transition-colors duration-300"
@@ -67,27 +71,25 @@ export default function AboutSection() {
       {/* About Me Section */}
       <div className="mt-8 flex flex-col">
         <h2 className="text-xl text-slate-200">About Me.</h2>
+
         <ul className="mt-2 flex flex-col gap-2 list-disc list-inside text-base tracking-tight text-slate-300">
           <li>
-            Hi, I am Utkarsh Dhande, a Full-Stack Developer passionate about
-            building scalable and user-friendly web applications.
+            I’m a full-stack developer focused on building reliable, production-ready
+            web applications using React, Next.js, and Node.js.
           </li>
           <li>
-            I specialize in full-stack development using the MERN stack
-            (MongoDB, Express.js, React.js, Node.js) and Next.js for
-            server-side rendering and optimized performance.
+            I work with the MERN stack and Next.js to design REST APIs, handle
+            authentication, manage databases, and deliver responsive user interfaces.
           </li>
           <li>
-            I have experience working with RESTful APIs, authentication,
-            database management, and implementing modern frontend technologies
-            like Tailwind CSS and Framer Motion to create dynamic and visually
-            appealing interfaces.
+            I enjoy understanding system flow, breaking down problems, and writing
+            clean, maintainable code that scales with real-world use.
           </li>
         </ul>
 
         <p className="mt-4 text-base text-slate-300">
-          Have an idea, want to collaborate, or have an internship opportunity?
-          Feel free to message me! I'm always excited to connect and work on great projects.{' '}
+          Have an idea, want to collaborate, or looking for an internship opportunity?
+          Feel free to reach out — I’m always open to meaningful conversations.{` `}
           <a
             href="mailto:utkarshdhande1432@gmail.com"
             className="text-slate-100 hover:text-blue-300 underline"

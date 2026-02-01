@@ -24,16 +24,19 @@ const contactMethods = [
 export default function Contact() {
   return (
     <motion.div
-      className="mx-auto max-w-2xl md:px-4 px-8 mt-8]"
+      className="mx-auto max-w-2xl md:px-4 px-8 mt-4"
       initial={{ filter: 'blur(10px)' }}
       animate={{ filter: 'blur(0px)' }}
       transition={{ duration: 0.5 }}
     >
-      <h1 className="text-xl text-slate-100">Reach out to me.</h1>
-      <p className="text-base tracking-tight">
-        Feel free to reach out to me via email, LinkedIn, or Twitter for any
-        queries, collaboration opportunities, or further details.
+      <h1 className="text-xl text-slate-100">Let’s connect.</h1>
+
+      <p className="text-base tracking-tight text-slate-300">
+        Whether you have an idea, want to collaborate, or are looking for a
+        motivated developer, feel free to reach out. I’m always open to
+        meaningful conversations.
       </p>
+
       <div className="mt-4 mb-4">
         <div className="mt-4 flex flex-wrap gap-4">
           {contactMethods.map((method, index) => (

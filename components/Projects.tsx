@@ -1,51 +1,53 @@
-"use client"
+"use client";
 import { motion } from 'framer-motion';
 
 const projects = [
   {
-    "title": "Trimrr",
-    "description": "A modern URL shortener with real-time analytics, secure authentication, and QR code generation for easy sharing.",
-    "tech": [
-        "React.js",
-        "TailwindCSS",
-        "Supabase",
-        "Shadcn UI",
-        "Vite",
-        "PostgreSQL",
-        "Vercel"
+    title: "Trimrr",
+    description:
+      "A full-stack URL shortener built to manage links with authentication, analytics, and QR code generation. Focused on designing scalable APIs, tracking usage data, and delivering a clean, responsive user experience.",
+    tech: [
+      "React.js",
+      "TailwindCSS",
+      "Supabase",
+      "Shadcn UI",
+      "Vite",
+      "PostgreSQL",
+      "Vercel"
     ],
-    "github": "https://github.com/UtkarsHHDhande/url-shortener",
-    "live": "https://trimrr-nu.vercel.app/"
-},
-{
-  "title": "ClimaSync",
-  "description": "A modern weather application that fetches real-time weather data, visualizes trends with interactive charts, and provides a seamless user experience with a fully responsive UI.",
-  "tech": [
-    "Next.js",
-    "React",
-    "TanStack Query",
-    "ShadCN UI",
-    "Recharts",
-    "TailwindCSS",
-    "TypeScript"
-  ],
-  "github": "https://github.com/UtkarsHHDhande/climasync",
-  "live": "https://clima-sync.vercel.app/"
-},
-{
-  title: 'GIPHY Clone',
-  description:
-    'A GIF search and sharing platform built with React and Tailwind CSS, featuring search, favorites, sharing, and embedding functionalities.',
-  tech: [
-    'React.js',
-    'TailwindCSS',
-    'Vite',
-    'GIPHY API',
-    'React Router',
-  ],
-  github: 'https://github.com/UtkarsHHDhande/giphy-clone',
-  live: 'https://giphy-clone-ruby.vercel.app/',
-},
+    github: "https://github.com/UtkarsHHDhande/url-shortener",
+    live: "https://trimrr-nu.vercel.app/"
+  },
+  {
+    title: "ClimaSync",
+    description:
+      "A weather application that fetches and visualizes real-time weather data using charts and async data handling. Built with a focus on performance, clean UI, and reliable state management.",
+    tech: [
+      "Next.js",
+      "React",
+      "TanStack Query",
+      "ShadCN UI",
+      "Recharts",
+      "TailwindCSS",
+      "TypeScript"
+    ],
+    github: "https://github.com/UtkarsHHDhande/climasync",
+    live: "https://clima-sync.vercel.app/"
+  },
+  {
+    title: "GIPHY Clone",
+    description:
+      "A GIF search and sharing platform built using a public API, supporting search, favorites, and sharing. The project focuses on API integration, client-side routing, and responsive UI design.",
+    tech: [
+      "React.js",
+      "TailwindCSS",
+      "Vite",
+      "GIPHY API",
+      "React Router"
+    ],
+    github: "https://github.com/UtkarsHHDhande/giphy-clone",
+    live: "https://giphy-clone-ruby.vercel.app/"
+  },
 ];
 
 export default function Projects() {
@@ -59,13 +61,15 @@ export default function Projects() {
       <h1 className="text-xl text-slate-100">Projects</h1>
       <div>
         {projects.map((project, index) => (
-          <div key={index} className=" my-4 rounded-lg ">
+          <div key={index} className="my-4 rounded-lg">
             <h2 className="text-base font-semibold text-slate-200">
               {index + 1}. {project.title}
             </h2>
+
             <p className="text-slate-300 mt-1 text-base tracking-tight">
-              {project.description || 'No description available.'}
+              {project.description}
             </p>
+
             <div className="mt-2">
               <div className="flex flex-wrap gap-2 mt-1">
                 {project.tech.map((tech, techIndex) => (
@@ -78,6 +82,7 @@ export default function Projects() {
                 ))}
               </div>
             </div>
+
             <div className="mt-2 text-sm">
               <a
                 href={project.github}
